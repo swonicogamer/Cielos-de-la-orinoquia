@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "automatico",
+  "title": "Noticias y recursos educativos · NASA",
+  "updated": "2026-10-11",
+  "reviewAfter": "2026-10-19",
+  "checkedAt": "2026-10-11T03:46:28.990554+00:00",
+  "latestNewsDate": "2026-10-07",
+  "articles": [
+    {
+      "title": "Artemis II: Imágenes y sonidos de la ciencia",
+      "url": "https://ciencia.nasa.gov/feature/informe-preliminar-ciencia-lunar-artemis-ii/",
+      "date": "2026-10-07",
+      "summary": "Lee la explicación original en español de NASA. Esta tarjeta no incluye un resumen automático del descubrimiento.",
+      "source": "NASA Ciencia · español",
+      "topic": "La Luna",
+      "glyph": "✦",
+      "meaning": "Recurso educativo relacionado con el tema; no es una explicación específica de este descubrimiento.",
+      "question": "¿Qué parte de la Luna está iluminada y qué parte podemos ver desde la Tierra?",
+      "activity": "Usen una pelota y una lámpara para representar las fases. La sombra de la Tierra no es la causa de las fases.",
+      "educationUrl": "https://spaceplace.nasa.gov/moon-phases/sp/"
+    },
+    {
+      "title": "Consejos de la NASA para observar el cielo en octubre de 2026",
+      "url": "https://ciencia.nasa.gov/ciencias-terrestres/consejos-de-la-nasa-para-observar-el-cielo-en-octubre-de-2026/",
+      "date": "2026-10-01",
+      "summary": "Saturno toma un lugar protagónico, una lluvia de meteoros ilumina el cielo y la Luna visita a las Siete Hermanas, las Pléyades. Eventos destacados Saturno en oposición El 4 de octubre, Saturno alcanza la oposición, dando a los observadores del cielo una de las mejores oportunidades del año para ver el planeta de los anillos.…",
+      "source": "NASA Ciencia · español",
+      "topic": "Exploración espacial",
+      "glyph": "✦",
+      "meaning": "Recurso educativo relacionado con el tema; no es una explicación específica de este descubrimiento.",
+      "question": "¿Qué midieron los investigadores y qué interpretación proponen?",
+      "activity": "Identifiquen una evidencia, una explicación y algo que aún no se sabe. Escríbanlo en la bitácora.",
+      "educationUrl": "https://spaceplace.nasa.gov/spacecraft/sp/"
+    },
+    {
+      "title": "La Tierra",
+      "url": "https://ciencia.nasa.gov/ciencias-terrestres/la-tierra/",
+      "date": "2026-09-30",
+      "summary": "Lee la explicación original en español de NASA. Esta tarjeta no incluye un resumen automático del descubrimiento.",
+      "source": "NASA Ciencia · español",
+      "topic": "El Sol",
+      "glyph": "✦",
+      "meaning": "Recurso educativo relacionado con el tema; no es una explicación específica de este descubrimiento.",
+      "question": "¿Qué diferencia hay entre observar el Sol y observar una estrella de noche?",
+      "activity": "Dibujen el Sol y escriban qué quieren aprender. No observen el Sol con el telescopio ni con binoculares sin equipo solar adecuado y supervisión.",
+      "educationUrl": "https://spaceplace.nasa.gov/sun/sp/"
+    }
+  ],
+  "events": [],
+  "challengeTitle": "De la noticia a la bitácora",
+  "challenge": "Elige una noticia y registra qué observaron o midieron, qué explicación proponen y qué queda por investigar. Consulta el recurso educativo relacionado."
+}
