@@ -4,7 +4,7 @@
   "title": "Noticias y recursos educativos · NASA",
   "updated": "2026-10-11",
   "reviewAfter": "2026-10-19",
-  "checkedAt": "2026-10-11T03:47:03.598641+00:00",
+  "checkedAt": "2026-10-11T03:48:56.200562+00:00",
   "latestNewsDate": "2026-10-07",
   "articles": [
     {
@@ -26,25 +26,25 @@
       "date": "2026-10-01",
       "summary": "Saturno toma un lugar protagónico, una lluvia de meteoros ilumina el cielo y la Luna visita a las Siete Hermanas, las Pléyades. Eventos destacados Saturno en oposición El 4 de octubre, Saturno alcanza la oposición, dando a los observadores del cielo una de las mejores oportunidades del año para ver el planeta de los anillos.…",
       "source": "NASA Ciencia · español",
-      "topic": "Exploración espacial",
+      "topic": "Planetas y observación",
       "glyph": "✦",
       "meaning": "Recurso educativo relacionado con el tema; no es una explicación específica de este descubrimiento.",
-      "question": "¿Qué midieron los investigadores y qué interpretación proponen?",
-      "activity": "Identifiquen una evidencia, una explicación y algo que aún no se sabe. Escríbanlo en la bitácora.",
-      "educationUrl": "https://spaceplace.nasa.gov/spacecraft/sp/"
+      "question": "¿Qué distingue un planeta de una estrella y qué podemos observar desde la Tierra?",
+      "activity": "Elijan un objeto de la agenda y anoten qué esperan observar, con qué ocular y a qué hora. Comparen después la predicción con la bitácora.",
+      "educationUrl": "https://spaceplace.nasa.gov/planet-what-is/sp/"
     },
     {
-      "title": "La Tierra",
-      "url": "https://ciencia.nasa.gov/ciencias-terrestres/la-tierra/",
-      "date": "2026-09-30",
-      "summary": "Lee la explicación original en español de NASA. Esta tarjeta no incluye un resumen automático del descubrimiento.",
+      "title": "Un planeta ‘bebé’ recién descubierto bate el récord como el mundo más joven conocido",
+      "url": "https://ciencia.nasa.gov/universo/un-planeta-bebe-recien-descubierto-bate-el-record-como-el-mundo-mas-joven-conocido/",
+      "date": "2026-09-29",
+      "summary": "Utilizando datos de archivos financiados por la NASA, un grupo de astrónomos ha confirmado que un mundo con menos de un millón de años de antigüedad es el planeta más joven que se conoce. Este planeta en formación, denominado Elias 2-24 b, todavía está girando dentro de su disco natal de polvo y gas. “Nuestros…",
       "source": "NASA Ciencia · español",
-      "topic": "El Sol",
+      "topic": "Planetas y observación",
       "glyph": "✦",
       "meaning": "Recurso educativo relacionado con el tema; no es una explicación específica de este descubrimiento.",
-      "question": "¿Qué diferencia hay entre observar el Sol y observar una estrella de noche?",
-      "activity": "Dibujen el Sol y escriban qué quieren aprender. No observen el Sol con el telescopio ni con binoculares sin equipo solar adecuado y supervisión.",
-      "educationUrl": "https://spaceplace.nasa.gov/sun/sp/"
+      "question": "¿Qué distingue un planeta de una estrella y qué podemos observar desde la Tierra?",
+      "activity": "Elijan un objeto de la agenda y anoten qué esperan observar, con qué ocular y a qué hora. Comparen después la predicción con la bitácora.",
+      "educationUrl": "https://spaceplace.nasa.gov/planet-what-is/sp/"
     }
   ],
   "events": [],
