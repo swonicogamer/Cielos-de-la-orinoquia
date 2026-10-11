@@ -12,7 +12,8 @@ LESSONS = [
  ('galaxia', 'Galaxias', ['galax','via lactea'], 'galaxy', '¿Qué diferencia hay entre una estrella y una galaxia?', 'Dibujen una estrella, un sistema planetario y una galaxia. Expliquen qué contiene cada uno.'),
  ('nebulosa', 'Nebulosas', ['nebulosa'], 'nebula', '¿Qué preguntas harías sobre una nube de gas y polvo?', 'Comparen una fotografía astronómica con un dibujo de observación. Anoten qué pueden afirmar a partir de cada representación.'),
  ('gravedad', 'Gravedad', ['gravit','agujero negro'], 'what-is-gravity', '¿Cómo sabemos que existe algo si solo observamos sus efectos?', 'Escriban una observación, una interpretación y una duda de la noticia. Mantengan separadas las tres.'),
- ('sol', 'El Sol', ['solar','sol ','sol:', 'corona'], 'sun', '¿Qué diferencia hay entre observar el Sol y observar una estrella de noche?', 'Dibujen el Sol y escriban qué quieren aprender. No observen el Sol con el telescopio ni con binoculares sin equipo solar adecuado y supervisión.'),
+ ('planeta', 'Planetas y observación', ['planeta','saturno','jupiter','cielo','meteoro'], 'planet-what-is', '¿Qué distingue un planeta de una estrella y qué podemos observar desde la Tierra?', 'Elijan un objeto de la agenda y anoten qué esperan observar, con qué ocular y a qué hora. Comparen después la predicción con la bitácora.'),
+ ('sol', 'El Sol', ['solar','sol ','sol:', 'corona'], 'sun-heat', '¿Qué diferencia hay entre observar el Sol y observar una estrella de noche?', 'Dibujen el Sol y escriban qué quieren aprender. No observen el Sol con el telescopio ni con binoculares sin equipo solar adecuado y supervisión.'),
 ]
 def clean(s):
  s=re.sub(r'<(script|style)\b[^>]*>.*?</\1>', '', s or '', flags=re.S|re.I)
@@ -25,13 +26,14 @@ def request(url):
 def lesson(text):
  for _,topic,keys,slug,q,activity in LESSONS:
   if any(k in text for k in keys): return topic,slug,q,activity
- return 'Exploración espacial','spacecraft','¿Qué midieron los investigadores y qué interpretación proponen?','Identifiquen una evidencia, una explicación y algo que aún no se sabe. Escríbanlo en la bitácora.'
+ return 'Exploración espacial','build-a-spacecraft','¿Qué midieron los investigadores y qué interpretación proponen?','Identifiquen una evidencia, una explicación y algo que aún no se sabe. Escríbanlo en la bitácora.'
 def build(raw, now):
  root=ET.fromstring(raw); articles=[]; seen=set()
  for item in root.findall('./channel/item'):
   title=clean(item.findtext('title')); url=item.findtext('link') or ''
   categories=' '.join(x.text or '' for x in item.findall('category'))
   text=norm(title+' '+categories)
+  if norm(title) in ['la tierra','datos sobre la tierra'] or norm(title).startswith(('datos sobre ', 'que es ', 'que son ')): continue
   if not url.startswith('https://ciencia.nasa.gov/') or url in seen: continue
   if not any(k in text for k in ['universo','astronom','luna','artemis','planeta','saturno','jupiter','webb','hubble','galax','estrella','espacial','meteoro','cielo','solar']): continue
   try: date=parsedate_to_datetime(item.findtext('pubDate')).astimezone(timezone.utc).date()
@@ -40,7 +42,7 @@ def build(raw, now):
   description=clean(item.findtext('description')).split('The post ')[0].strip()
   if len(description)<30: description='Lee la explicación original en español de NASA. Esta tarjeta no incluye un resumen automático del descubrimiento.'
   words=description.split(); summary=' '.join(words[:55])+('…' if len(words)>55 else '')
-  topic,slug,q,activity=lesson(text)
+  topic,slug,q,activity=lesson(norm(title))
   articles.append(dict(title=title,url=url,date=date.isoformat(),summary=summary,source='NASA Ciencia · español',topic=topic,glyph='✦',meaning='Recurso educativo relacionado con el tema; no es una explicación específica de este descubrimiento.',question=q,activity=activity,educationUrl=f'https://spaceplace.nasa.gov/{slug}/sp/'))
   seen.add(url)
  articles.sort(key=lambda a:a['date'],reverse=True)
